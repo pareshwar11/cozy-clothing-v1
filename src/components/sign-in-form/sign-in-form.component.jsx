@@ -35,8 +35,9 @@ const SignInForm = () => {
         email,
         password
       );
-
       resetFormFields();
+      
+      alert("Successfully Sign-In")
     } catch (error) {
       switch (error.code) {
         case 'auth/wrong-password':
