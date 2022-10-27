@@ -1,4 +1,5 @@
 import Directory from '../../components/directory/directory.component';
+import Footer from '../../components/footer/footer.component';
 
 const Home = () => {
   const categories = [
@@ -32,6 +33,7 @@ const Home = () => {
   return (
     <div>
   <Directory categories={categories} />
+  <Footer/>
     </div>
   );
 };
