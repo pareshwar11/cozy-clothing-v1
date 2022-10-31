@@ -22,6 +22,9 @@ const Navigation = () => {
           <CrwnLogo className='logo' />
         </Link>
         <div className='nav-links-container'>
+          <Link className='nav-link' to='/demoauth'>
+            DEMO ID/PASS
+          </Link>
           <Link className='nav-link' to='/shop'>
             SHOP
           </Link>
