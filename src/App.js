@@ -6,9 +6,12 @@ import Authentication from './routes/authentication/authentication.component';
 import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.component';
 // import Footer from './components/footer/footer.component';
+import { GlobalStyle } from './global.styles';
 
 const App = () => {
   return (
+    <div>
+       <GlobalStyle />
     <Routes>
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
@@ -18,6 +21,7 @@ const App = () => {
       </Route>
       
     </Routes>
+    </div>
   );
 };
 

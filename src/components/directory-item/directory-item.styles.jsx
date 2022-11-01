@@ -31,6 +31,11 @@ export const Body = styled.div`
   p {
     font-weight: lighter;
     font-size: 16px;
+
+    @media screen and (max-width: 800px) {
+      font-weight: 900;
+    font-size: 13px
+    }
   }
 `;
 
@@ -48,6 +53,7 @@ export const DirectoryItemContainer = styled.div`
   &:hover {
     cursor: pointer;
 
+
     & ${BackgroundImage} {
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -56,7 +62,10 @@ export const DirectoryItemContainer = styled.div`
     & ${Body} {
       opacity: 0.9;
     }
+
+    
   }
+  
 
   &:first-child {
     margin-right: 7.5px;
@@ -64,5 +73,8 @@ export const DirectoryItemContainer = styled.div`
 
   &:last-child {
     margin-left: 7.5px;
+  }
+   @media screen and (max-width: 800px) {
+    height: 200px;
   }
 `;
